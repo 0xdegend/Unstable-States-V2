@@ -21,10 +21,16 @@ const HeroPage = () => {
     <section
       id="home"
       className="relative flex items-center justify-center min-h-[80vh] bg-cover bg-center"
-      style={{
-        backgroundImage: "url('/assets/USD-new-hero-bg.jpg')",
-      }}
     >
+      {/* Background Video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover z-0"
+        src="/unstable-market.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
       {/* Glasmorphism Card */}
       <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-gray-900/60 to-gray-800/60 z-0" />
       <div className="relative z-10 w-full max-w-3xl mx-auto px-6 py-12 rounded-3xl backdrop-blur-lg bg-white/10 border border-white/20 shadow-2xl flex flex-col items-center gap-8">
