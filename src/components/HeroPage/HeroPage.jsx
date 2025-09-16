@@ -20,7 +20,7 @@ const HeroPage = () => {
   return (
     <section
       id="home"
-      className="relative flex items-center justify-center min-h-[80vh] bg-cover bg-center"
+      className="relative flex items-center justify-center min-h-[90vh] bg-cover bg-center"
     >
       {/* Background Video */}
       <video
@@ -31,32 +31,34 @@ const HeroPage = () => {
         muted
         playsInline
       />
-      {/* Glasmorphism Card */}
-      <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-gray-900/60 to-gray-800/60 z-0" />
-      <div className="relative z-10 w-full max-w-3xl mx-auto px-6 py-12 rounded-3xl backdrop-blur-lg bg-white/10 border border-white/20 shadow-2xl flex flex-col items-center gap-8">
-        {/* New Illustration */}
-        <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-white/30 shadow-lg bg-white/10 flex items-center justify-center">
+      {/* Enhanced Glasmorphism Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-[#072b0e]/60 to-[#062938]/70 z-0" />
+      {/* Main Card */}
+      <div className="relative z-10 w-full max-w-4xl mx-auto px-10 py-16 rounded-3xl backdrop-blur-2xl bg-white/10 border border-white/30 shadow-2xl flex flex-col items-center gap-10">
+        {/* Logo Illustration */}
+        <div className="w-36 h-36 rounded-2xl overflow-hidden border-4 border-[#4bbf67]/30 shadow-xl bg-white/10 flex items-center justify-center mb-2">
           <img
             src="/assets/LOGO_Big_center.png"
             alt="$USD logo"
-            className="w-28 h-28 object-contain drop-shadow-xl"
+            className="w-32 h-32 object-contain drop-shadow-2xl"
           />
         </div>
-        <h1 className="text-4xl md:text-5xl font-bold text-white text-center drop-shadow-lg">
+        <h1 className="text-5xl md:text-6xl font-extrabold text-white text-center drop-shadow-xl tracking-tight">
           Unstable States Dollar
         </h1>
-        <p className="text-lg md:text-xl text-gray-200 text-center max-w-xl">
-          The real USD is collapsing. The Unstable States Dollar is just as
-          unstable.
+        <p className="text-xl md:text-2xl text-[#b2c4cd] text-center max-w-lg font-medium">
+          The real USD is collapsing.
           <br />
-          <span className="text-xs text-gray-400">CA: {contractAddress}</span>
+          <span className="text-base text-[#4bbf67] font-mono">
+            CA: {contractAddress}
+          </span>
         </p>
-        <div className="flex flex-col md:flex-row gap-4 w-full justify-center">
+        <div className="flex flex-col md:flex-row gap-5 w-full justify-center mt-2">
           <a
             href="https://jup.ag"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 rounded-xl bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 text-white font-semibold shadow-lg hover:scale-105 transition-transform backdrop-blur-md border border-white/20"
+            className="px-7 py-3 rounded-xl bg-gradient-to-r from-[#4bbf67] via-[#63d382] to-[#062938] text-gray-900 font-bold shadow-xl hover:scale-105 transition-transform border border-[#4bbf67]/40 backdrop-blur-md hover:text-white"
           >
             Buy $USD
           </a>
@@ -64,17 +66,17 @@ const HeroPage = () => {
             href="https://x.com/i/communities/1951079426835267602"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 rounded-xl bg-white/10 text-white font-semibold shadow-lg hover:bg-white/20 hover:scale-105 transition-transform border border-white/20 backdrop-blur-md"
+            className="px-7 py-3 rounded-xl bg-[#072b0e]/60 text-white font-bold shadow-xl hover:bg-[#4bbf67]/20 hover:scale-105 transition-transform border border-[#4bbf67]/40 backdrop-blur-md"
           >
             Join Community
           </a>
         </div>
         {contextHolder}
         <button
-          className="flex items-center gap-2 px-5 py-2 rounded-xl bg-white/10 text-white font-medium shadow hover:bg-white/20 hover:scale-105 transition-transform border border-white/20 backdrop-blur-md "
+          className="flex items-center gap-2 px-6 py-2 rounded-xl bg-[#4bbf67]/10 text-white font-semibold shadow hover:bg-[#4bbf67]/20 hover:scale-105 transition-transform border border-[#4bbf67]/40 backdrop-blur-md mt-2"
           onClick={handleCopy}
         >
-          <FaCopy className="text-lg" /> Copy Token Address
+          <FaCopy className="text-xl text-[#4bbf67]" /> Copy Token Address
         </button>
       </div>
     </section>
