@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { FaCopy } from "react-icons/fa";
 import { message } from "antd";

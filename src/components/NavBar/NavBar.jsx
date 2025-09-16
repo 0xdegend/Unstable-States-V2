@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 const NavBar = () => {
@@ -70,9 +69,9 @@ const NavBar = () => {
             >
               About
             </a>
-            <div class="dropdown">
+            <div className="dropdown">
               <a href="#">Stake ▾</a>
-              <div class="dropdown-content">
+              <div className="dropdown-content">
                 <a
                   href="https://app.streamflow.finance/staking/solana/mainnet/zEYkTNer9K8iV8tcBLW75pRxw4NSBrttC7hDBFP9oBT"
                   target="_blank"
