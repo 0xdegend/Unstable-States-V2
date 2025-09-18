@@ -65,7 +65,7 @@ const About = () => {
         {/* Right: Glassmorphism Chart Card */}
         <div className="flex-1 flex flex-col items-center justify-center rounded-2xl backdrop-blur-xl bg-white/10 border border-[#4bbf67]/20 shadow-lg p-8 min-w-[340px] max-w-lg">
           <h3 className="text-2xl font-bold text-white mb-2 text-center">
-            Live Chart
+            Live Charts
           </h3>
           <p className="text-[#b2c4cd] mb-4 text-center">
             Real-time price data and trading volume
