@@ -2,6 +2,9 @@
 import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 const NavBar = () => {
+  // Dropdown state for desktop
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdownHover, setDropdownHover] = useState(false);
   // State to toggle mobile navigation menu
   const [navOpen, setNavOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
@@ -79,19 +82,38 @@ const NavBar = () => {
             >
               About
             </a>
-            <div className="relative group">
+            <div
+              className="relative"
+              onMouseEnter={() => setDropdownHover(true)}
+              onMouseLeave={() => setDropdownHover(false)}
+            >
               <a
                 href="#"
                 className="transition-colors px-2 py-1 rounded-xl hover:bg-[#4bbf67]/10"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setDropdownOpen((v) => !v);
+                }}
+                onMouseEnter={() => setDropdownHover(true)}
+                onMouseLeave={() => setDropdownHover(false)}
               >
                 Stake ▾
               </a>
-              <div className="absolute left-0 top-full mt-2 min-w-[220px] bg-white/10 backdrop-blur-xl border border-[#4bbf67]/20 rounded-xl shadow-lg opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity">
+              <div
+                className={`absolute left-0 top-full mt-2 min-w-[220px] bg-white/10 backdrop-blur-xl border border-[#4bbf67]/20 rounded-xl shadow-lg transition-opacity duration-200 ${
+                  dropdownOpen || dropdownHover
+                    ? "opacity-100 visible"
+                    : "opacity-0 invisible"
+                } pointer-events-auto`}
+                onMouseEnter={() => setDropdownHover(true)}
+                onMouseLeave={() => setDropdownHover(false)}
+              >
                 <a
                   href="https://app.streamflow.finance/staking/solana/mainnet/zEYkTNer9K8iV8tcBLW75pRxw4NSBrttC7hDBFP9oBT"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block px-4 py-2 text-[#b2c4cd] hover:bg-[#4bbf67]/10"
+                  onClick={() => setDropdownOpen(false)}
                 >
                   Old Pool ($USD)
                 </a>
@@ -100,6 +122,7 @@ const NavBar = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block px-4 py-2 text-[#b2c4cd] hover:bg-[#4bbf67]/10"
+                  onClick={() => setDropdownOpen(false)}
                 >
                   New Pool ($USD + other $Bonk memes)
                 </a>
