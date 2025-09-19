@@ -68,7 +68,7 @@ const About = () => {
             Live Charts
           </h3>
           <p className="text-[#b2c4cd] mb-4 text-center">
-            Real-time price data and trading volume
+            Real-time price data and trading volume of $USD and Dollar
           </p>
           <iframe
             id="dextools-widget"
