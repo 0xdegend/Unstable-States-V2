@@ -34,7 +34,7 @@ const HeroPage = () => {
       {/* Enhanced Glasmorphism Overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-[#072b0e]/60 to-[#062938]/70 z-0" />
       {/* Main Card */}
-      <div className="relative z-10 w-full max-w-4xl mx-auto px-10 py-16 rounded-3xl backdrop-blur-2xl bg-white/10 border border-white/30 shadow-2xl flex flex-col items-center gap-10">
+      <div className="relative z-10 w-full max-w-4xl mx-auto px-10 py-16 rounded-3xl backdrop-blur-2xl bg-white/10 border border-white/30 shadow-2xl flex flex-col items-center gap-10 mt-20">
         {/* Logo Illustration */}
         <div className="w-36 h-36 rounded-2xl overflow-hidden border-4 border-[#4bbf67]/30 shadow-xl bg-white/10 flex items-center justify-center mb-2">
           <img

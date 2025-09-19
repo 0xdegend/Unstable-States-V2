@@ -5,7 +5,6 @@ import RoadMap from "../components/RoadMap/RoadMap";
 import HowToBuy from "../components/HowToBuy/HowToBuy";
 import Community from "../components/Community/Community";
 import About from "../components/About/About";
-import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
       <RoadMap />
       <HowToBuy />
       <Community />
-      <Footer />
     </div>
   );
 }
