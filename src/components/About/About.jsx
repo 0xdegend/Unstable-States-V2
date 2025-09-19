@@ -8,13 +8,13 @@ const About = () => {
       className="relative flex items-center justify-center min-h-[70vh] py-20 bg-transparent"
     >
       {/* Glassmorphism Card - Flex Row Layout */}
-      <div className="relative w-full max-w-5xl mx-auto px-10 py-14 rounded-3xl backdrop-blur-2xl bg-white/10 border border-[#4bbf67]/30 shadow-2xl flex flex-row items-stretch gap-10 z-10">
-        {/* Left: About Content */}
-        <div className="flex-1 flex flex-col justify-center gap-6">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-white text-left drop-shadow-xl tracking-tight mb-2">
+      <div className="relative w-full max-w-5xl mx-auto px-10 py-14 rounded-3xl backdrop-blur-2xl bg-white/10 border border-[#4bbf67]/30 shadow-2xl flex flex-col  gap-10 z-10">
+        {/* About Content */}
+        <div className="w-full flex flex-col justify-center gap-6">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-white text-center drop-shadow-xl tracking-tight mb-2">
             About Unstable States Dollar
           </h2>
-          <p className="text-lg md:text-xl text-[#b2c4cd] text-left max-w-xl font-medium">
+          <p className="text-lg md:text-xl text-[#b2c4cd] w-full font-medium text-left">
             $USD is a community-led meme coin that turns the concept of
             stability on its head. In a world where fiat is shaky and
             “stablecoins” are anything but, $USD proudly leans into volatility.
@@ -27,7 +27,7 @@ const About = () => {
             It’s not trying to stay at $1 — it’s daring the community to re-peg
             it through pure meme power and market energy.
           </p>
-          <p className="text-lg md:text-xl text-[#b2c4cd] text-left max-w-xl font-medium">
+          <p className="text-lg md:text-xl text-[#b2c4cd] text-left max-full font-medium">
             Already aligned with the BONK ecosystem and featuring Nom
             (co-founder of Let’s BONK) as a top holder, $USD has now taken a
             serious step forward by appointing
@@ -38,7 +38,7 @@ const About = () => {
             </sup>
             a new CTO to lead development and coordination efforts.
           </p>
-          <p className="text-lg md:text-xl text-[#b2c4cd] text-left max-w-xl font-medium">
+          <p className="text-lg md:text-xl text-[#b2c4cd] text-left max-full font-medium">
             The mission is simple: build infrastructure, rally the troops, and
             push $USD toward becoming the official unstable coin of crypto.
             <br />
@@ -62,23 +62,32 @@ const About = () => {
             </sup>
           </p>
         </div>
-        {/* Right: Glassmorphism Chart Card */}
-        <div className="flex-1 flex flex-col items-center justify-center rounded-2xl backdrop-blur-xl bg-white/10 border border-[#4bbf67]/20 shadow-lg p-8 min-w-[340px] max-w-lg">
-          <h3 className="text-2xl font-bold text-white mb-2 text-center">
-            Live Charts
-          </h3>
-          <p className="text-[#b2c4cd] mb-4 text-center">
-            Real-time price data and trading volume of $USD and Dollar
-          </p>
-          <iframe
-            id="dextools-widget"
-            title="DEXTools Trading Chart"
-            src="https://www.dextools.io/widget-chart/en/solana/pe-light/F8afaNTv6cKZU7uTPkj1o49dNtJxMaPDNcu7W47sw3Hs?theme=light&chartType=1&chartResolution=30&drawingToolbars=false"
-            className="w-full h-[340px] rounded-xl border-none"
-            style={{ background: "transparent" }}
-          ></iframe>
-
-          <TradingViewChart />
+        {/* Chart Section: DEXTools and TradingView side by side */}
+        <div className="w-full flex flex-col md:flex-row gap-8 mt-10">
+          <div className="flex-1 flex flex-col items-center justify-center rounded-2xl backdrop-blur-xl bg-white/10 border border-[#4bbf67]/20 shadow-lg p-8 min-w-[340px] max-w-lg">
+            <h3 className="text-2xl font-bold text-white mb-2 text-center">
+              $USD Chart
+            </h3>
+            <p className="text-[#b2c4cd] mb-4 text-center">
+              Real-time price data and trading volume of $USD
+            </p>
+            <iframe
+              id="dextools-widget"
+              title="DEXTools Trading Chart"
+              src="https://www.dextools.io/widget-chart/en/solana/pe-light/F8afaNTv6cKZU7uTPkj1o49dNtJxMaPDNcu7W47sw3Hs?theme=light&chartType=1&chartResolution=30&drawingToolbars=false"
+              className="w-full h-[340px] rounded-xl border-none"
+              style={{ background: "transparent" }}
+            ></iframe>
+          </div>
+          <div className="flex-1 flex flex-col items-center justify-center rounded-2xl backdrop-blur-xl bg-white/10 border border-[#4bbf67]/20 shadow-lg p-8 min-w-[340px] max-w-lg">
+            <h3 className="text-2xl font-bold text-white mb-2 text-center">
+              Dollar Chart
+            </h3>
+            <p className="text-[#b2c4cd] mb-4 text-center">
+              Live Dollar Index (DXY)
+            </p>
+            <TradingViewChart />
+          </div>
         </div>
       </div>
       {/* Subtle background accent for glassmorphism */}

@@ -7,6 +7,16 @@ function TradingViewWidget() {
 
   useEffect(() => {
     if (!container.current) return;
+    // Clean up previous widget and script
+    container.current.innerHTML = `
+      <div class="tradingview-widget-container__widget" style="height: calc(100% - 32px); width: 100%"></div>
+      <div class="tradingview-widget-copyright">
+        <a href="https://www.tradingview.com/symbols/CAPITALCOM-DXY/" rel="noopener nofollow" target="_blank">
+          <span class="blue-text">DXY chart</span>
+        </a>
+        <span class="trademark"> by TradingView</span>
+      </div>
+    `;
     const script = document.createElement("script");
     script.src =
       "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js";
@@ -38,6 +48,7 @@ function TradingViewWidget() {
           "autosize": true
         }`;
     container.current.appendChild(script);
+    // No need for cleanup function since we reset innerHTML on every mount
   }, []);
 
   return (
@@ -45,22 +56,7 @@ function TradingViewWidget() {
       className="tradingview-widget-container"
       ref={container}
       style={{ height: "100%", width: "100%" }}
-    >
-      <div
-        className="tradingview-widget-container__widget"
-        style={{ height: "calc(100% - 32px)", width: "100%" }}
-      ></div>
-      <div className="tradingview-widget-copyright">
-        <a
-          href="https://www.tradingview.com/symbols/CAPITALCOM-DXY/"
-          rel="noopener nofollow"
-          target="_blank"
-        >
-          <span className="blue-text">DXY chart</span>
-        </a>
-        <span className="trademark"> by TradingView</span>
-      </div>
-    </div>
+    />
   );
 }
 
