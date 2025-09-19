@@ -5,6 +5,20 @@ const NavBar = () => {
   // Dropdown state for desktop
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [dropdownHover, setDropdownHover] = useState(false);
+  const dropdownRef = React.useRef(null);
+  // Close dropdown on outside click
+  useEffect(() => {
+    if (!dropdownHover) return;
+    const handleClick = (e) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        setDropdownHover(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClick);
+    return () => {
+      document.removeEventListener("mousedown", handleClick);
+    };
+  }, [dropdownHover]);
   // State to toggle mobile navigation menu
   const [navOpen, setNavOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
@@ -84,6 +98,7 @@ const NavBar = () => {
             </a>
             <div
               className="relative"
+              ref={dropdownRef}
               onMouseEnter={() => setDropdownHover(true)}
               onMouseLeave={() => setDropdownHover(false)}
             >

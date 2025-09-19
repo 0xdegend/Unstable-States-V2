@@ -38,7 +38,7 @@ const HeroPage = () => {
         {/* Logo Illustration */}
         <div className="w-36 h-36 rounded-2xl overflow-hidden border-4 border-[#4bbf67]/30 shadow-xl bg-white/10 flex items-center justify-center mb-2">
           <img
-            src="/assets/LOGO_Big_center.png"
+            src="/usd-3d-logo.png"
             alt="$USD logo"
             className="w-32 h-32 object-contain drop-shadow-2xl"
           />
