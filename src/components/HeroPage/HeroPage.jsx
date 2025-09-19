@@ -49,7 +49,7 @@ const HeroPage = () => {
         <p className="text-xl md:text-2xl text-[#b2c4cd] text-center max-w-lg font-medium">
           The real USD is collapsing.
           <br />
-          <span className="text-base text-[#4bbf67] font-mono">
+          <span className="text-base text-[#4bbf67] ">
             CA: {contractAddress}
           </span>
         </p>

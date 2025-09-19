@@ -10,25 +10,38 @@ export const metadata: Metadata = {
   keywords: ["BONK"],
   authors: [{ name: "@USD_BONK " }],
   openGraph: {
-    title: "BONK PFP Maker - Create Your Memecoin PFP",
+    title:
+      "Unstable States Dollar | The only dollar that embraces chaos.CA: 7WXaHLjatDZBAZ7hyRiFpYpGpPbcKiyHf6HaxUzSbonk",
     description:
-      "Join BONK, SSX, Unstable State Dollar, Useless Coin & more with custom PFPs.",
-    images: ["/bonk-main-logo.png"],
+      "Unstable States Dollar | The only dollar that embraces chaos.CA: 7WXaHLjatDZBAZ7hyRiFpYpGpPbcKiyHf6HaxUzSbonk",
+    images: ["/usd-logo.png"],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "BONK PFP Maker",
-    description: "Create your perfect memecoin avatar",
-    images: ["/bonk-linear-logo.png"],
+    description:
+      "Unstable States Dollar | The only dollar that embraces chaos.CA: 7WXaHLjatDZBAZ7hyRiFpYpGpPbcKiyHf6HaxUzSbonk",
+    images: ["/usd-logo.png"],
   },
 };
-import { Montserrat } from "next/font/google";
+import { Bitcount_Single, Tektur, Coral_Pixels } from "next/font/google";
 
-const montserrat = Montserrat({
+const bitcountSingle = Bitcount_Single({
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+});
+
+const tektur = Tektur({
   subsets: ["latin"],
   weight: ["400", "700"],
   display: "swap",
+});
+
+const coralPixels = Coral_Pixels({
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export default function RootLayout({
@@ -38,7 +51,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`bg-gray-900 text-white ${montserrat.className}`}>
+      <body className={`bg-gray-900 text-white ${bitcountSingle.className}`}>
         {children}
       </body>
     </html>
