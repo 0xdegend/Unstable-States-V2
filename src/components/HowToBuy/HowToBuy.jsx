@@ -6,7 +6,7 @@ const HowToBuy = () => {
   return (
     <section
       id="buy"
-      className="relative flex items-center justify-center min-h-[60vh] py-20 bg-transparent"
+      className="relative flex items-center justify-center min-h-[60vh] py-20 bg-transparent p-3"
     >
       {/* Glassmorphism Gradient Accent */}
       <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-[#072b0e]/60 to-[#062938]/70 z-0" />

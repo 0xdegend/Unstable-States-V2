@@ -63,7 +63,7 @@ const Tokenomics = () => {
   return (
     <section
       id="tokenomics"
-      className="relative flex items-center justify-center min-h-[60vh] py-20 bg-transparent"
+      className="relative flex items-center justify-center min-h-[60vh] py-20 bg-transparent p-3"
     >
       {/* Glassmorphism Card */}
       <div className="relative w-full max-w-4xl mx-auto px-10 py-14 rounded-3xl backdrop-blur-2xl bg-white/10 border border-[#4bbf67]/30 shadow-2xl flex flex-col items-center gap-10 z-10">
@@ -77,7 +77,7 @@ const Tokenomics = () => {
         </p>
         <div className="flex flex-col items-center gap-2 mb-6">
           <span
-            className="font-mono text-[#4bbf67] bg-white/10 px-4 py-2 rounded-xl border border-[#4bbf67]/30 shadow text-lg tracking-wider select-all block max-w-full md:max-w-xl overflow-x-auto whitespace-nowrap text-sm md:text-lg"
+            className="font-mono text-[#4bbf67] bg-white/10 px-4 py-2 rounded-xl border border-[#4bbf67]/30 shadow text-lg tracking-wider select-all block max-w-full md:max-w-xl overflow-x-auto whitespace-nowrap text-sm md:text-lg lg:text-[18px] text-[12px]"
             style={{ wordBreak: "break-all" }}
           >
             {contractAddress}
