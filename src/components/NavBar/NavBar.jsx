@@ -56,7 +56,7 @@ const NavBar = () => {
             <img
               src="/assets/LOGO_small_topbar.png"
               alt="Unstable States Dollar logo"
-              className="w-50 h-10 rounded-xl shadow"
+              className="w-50 h-10 rounded-xl"
             />
           </a>
           <nav
