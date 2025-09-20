@@ -44,7 +44,7 @@ const HeroPage = () => {
           />
         </div>
         <h1 className="text-5xl md:text-6xl font-extrabold text-white text-center drop-shadow-xl tracking-tight">
-          Unstable States Dollar
+          Unstable States Dollar.
         </h1>
         <p className="text-xl md:text-2xl text-[#b2c4cd] text-center max-w-lg font-medium">
           The real USD is collapsing.
