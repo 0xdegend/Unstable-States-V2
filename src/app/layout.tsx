@@ -19,10 +19,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "BONK PFP Maker",
+    title: "Unstable States Dollar",
     description:
       "Unstable States Dollar | The only dollar that embraces chaos.CA: 7WXaHLjatDZBAZ7hyRiFpYpGpPbcKiyHf6HaxUzSbonk",
-    images: ["/usd-logo.png"],
+    images: ["/unstable-states-dollar.jpeg"],
   },
 };
 import { Bitcount_Single, Tektur, Coral_Pixels } from "next/font/google";
