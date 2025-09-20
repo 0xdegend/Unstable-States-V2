@@ -64,7 +64,7 @@ const About = () => {
         </div>
         {/* Chart Section: DEXTools and TradingView side by side */}
         <div className="w-full flex flex-col md:flex-row gap-8 mt-10">
-          <div className="flex-1 flex flex-col items-center justify-center rounded-2xl backdrop-blur-xl bg-white/10 border border-[#4bbf67]/20 shadow-lg p-8 min-w-[340px] max-w-lg">
+          <div className="flex-1 flex flex-col items-center justify-center rounded-2xl backdrop-blur-xl bg-white/10 border border-[#4bbf67]/20 shadow-lg p-5 min-w-[340px] max-w-lg">
             <h3 className="text-2xl font-bold text-white mb-2 text-center">
               $USD Chart
             </h3>
@@ -79,7 +79,7 @@ const About = () => {
               style={{ background: "transparent" }}
             ></iframe>
           </div>
-          <div className="flex-1 flex flex-col items-center justify-center rounded-2xl backdrop-blur-xl bg-white/10 border border-[#4bbf67]/20 shadow-lg p-8 min-w-[340px] max-w-lg">
+          <div className="flex-1 flex flex-col items-center justify-center rounded-2xl backdrop-blur-xl bg-white/10 border border-[#4bbf67]/20 shadow-lg p-5 min-w-[340px] max-w-lg h-[40vh] min-h-[400px] md:h-[60vh]">
             <h3 className="text-2xl font-bold text-white mb-2 text-center">
               Dollar Chart
             </h3>
