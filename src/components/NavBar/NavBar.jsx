@@ -2,23 +2,11 @@
 import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 const NavBar = () => {
+  // Mobile dropdown state
+  const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
   // Dropdown state for desktop
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [dropdownHover, setDropdownHover] = useState(false);
-  const dropdownRef = React.useRef(null);
-  // Close dropdown on outside click
-  useEffect(() => {
-    if (!dropdownHover) return;
-    const handleClick = (e) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
-        setDropdownHover(false);
-      }
-    };
-    document.addEventListener("mousedown", handleClick);
-    return () => {
-      document.removeEventListener("mousedown", handleClick);
-    };
-  }, [dropdownHover]);
   // State to toggle mobile navigation menu
   const [navOpen, setNavOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
@@ -98,7 +86,6 @@ const NavBar = () => {
             </a>
             <div
               className="relative"
-              ref={dropdownRef}
               onMouseEnter={() => setDropdownHover(true)}
               onMouseLeave={() => setDropdownHover(false)}
             >
@@ -214,9 +201,17 @@ const NavBar = () => {
         </div>
         {/* Mobile Nav Drawer */}
         <nav
-          className={`fixed top-0 left-0 h-full w-[70vw] max-w-xs bg-white/10 backdrop-blur-xl border-r border-[#4bbf67]/20 shadow-lg z-50 flex flex-col gap-6 p-8 pt-24 transition-transform duration-300 ${
+          className={`fixed top-0 left-0 min-h-screen h-screen w-[70vw] max-w-xs z-50 flex flex-col gap-6 p-8 pt-24 transition-transform duration-300 ${
             navOpen ? "translate-x-0" : "-translate-x-full"
           } md:hidden`}
+          style={{
+            background: "rgba(7,43,14,0.92)",
+            boxShadow: "0 8px 32px 0 rgba(75,191,103,0.25)",
+            borderRight: "1.5px solid #4bbf6733",
+            backdropFilter: "blur(18px)",
+            backgroundBlendMode: "overlay",
+            opacity: 0.97,
+          }}
         >
           <a
             href="#home"
@@ -244,27 +239,40 @@ const NavBar = () => {
             <a
               href="#"
               className="transition-colors px-2 py-1 rounded-xl hover:bg-[#4bbf67]/10"
+              onClick={(e) => {
+                e.preventDefault();
+                setMobileDropdownOpen((v) => !v);
+              }}
+              aria-expanded={mobileDropdownOpen}
+              aria-controls="mobile-stake-dropdown"
             >
               Stake ▾
             </a>
-            <div className="mt-2 min-w-[220px] bg-white/10 backdrop-blur-xl border border-[#4bbf67]/20 rounded-xl shadow-lg">
-              <a
-                href="https://app.streamflow.finance/staking/solana/mainnet/zEYkTNer9K8iV8tcBLW75pRxw4NSBrttC7hDBFP9oBT"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block px-4 py-2 text-[#b2c4cd] hover:bg-[#4bbf67]/10"
+            {mobileDropdownOpen && (
+              <div
+                id="mobile-stake-dropdown"
+                className="mt-2 min-w-[220px] bg-white/10 backdrop-blur-xl border border-[#4bbf67]/20 rounded-xl shadow-lg animate-fade-in"
               >
-                Old Pool ($USD)
-              </a>
-              <a
-                href="https://app.streamflow.finance/staking/solana/mainnet/5hKwkhvCzJbkGyKtrdRm9t1QYecAvz1CQvdvMvQ29sKu"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block px-4 py-2 text-[#b2c4cd] hover:bg-[#4bbf67]/10"
-              >
-                New Pool ($USD + other $Bonk memes)
-              </a>
-            </div>
+                <a
+                  href="https://app.streamflow.finance/staking/solana/mainnet/zEYkTNer9K8iV8tcBLW75pRxw4NSBrttC7hDBFP9oBT"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block px-4 py-2 text-[#b2c4cd] hover:bg-[#4bbf67]/10"
+                  onClick={() => setMobileDropdownOpen(false)}
+                >
+                  Old Pool ($USD)
+                </a>
+                <a
+                  href="https://app.streamflow.finance/staking/solana/mainnet/5hKwkhvCzJbkGyKtrdRm9t1QYecAvz1CQvdvMvQ29sKu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block px-4 py-2 text-[#b2c4cd] hover:bg-[#4bbf67]/10"
+                  onClick={() => setMobileDropdownOpen(false)}
+                >
+                  New Pool ($USD + other $Bonk memes)
+                </a>
+              </div>
+            )}
           </div>
           <a
             href="#"
@@ -333,7 +341,10 @@ const NavBar = () => {
               ? "opacity-100 pointer-events-auto"
               : "opacity-0 pointer-events-none"
           }`}
-          onClick={closeMenu}
+          onClick={() => {
+            closeMenu();
+            setMobileDropdownOpen(false);
+          }}
           aria-hidden={!navOpen}
         />
       </header>
