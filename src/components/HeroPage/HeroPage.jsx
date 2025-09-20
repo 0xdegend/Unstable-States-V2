@@ -20,7 +20,7 @@ const HeroPage = () => {
   return (
     <section
       id="home"
-      className="relative flex items-center justify-center min-h-[90vh] bg-cover bg-center"
+      className="relative p-3 flex items-center justify-center min-h-[90vh] bg-cover bg-center"
     >
       {/* Background Video */}
       <video
@@ -49,7 +49,7 @@ const HeroPage = () => {
         <p className="text-xl md:text-2xl text-[#b2c4cd] text-center max-w-lg font-medium">
           The real USD is collapsing.
           <br />
-          <span className="text-base text-[#4bbf67] ">
+          <span className="lg:text-[18px] text-[14.5px] text-[#4bbf67] ">
             CA: {contractAddress}
           </span>
         </p>
