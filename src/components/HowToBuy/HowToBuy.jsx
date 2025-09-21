@@ -11,12 +11,20 @@ const HowToBuy = () => {
       {/* Glassmorphism Gradient Accent */}
       <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-[#072b0e]/60 to-[#062938]/70 z-0" />
       <div className="relative w-full max-w-4xl mx-auto px-6 py-12 rounded-3xl backdrop-blur-2xl bg-white/10 border border-[#4bbf67]/30 shadow-2xl flex flex-col items-center gap-10 z-10">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-white text-center drop-shadow-xl tracking-tight mb-8 animate-fade-in">
+        <h2
+          className="text-4xl md:text-5xl font-extrabold text-white text-center drop-shadow-xl tracking-tight mb-8 animate-fade-in"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           How to Buy <span className="text-[#4bbf67]">$USD</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
           {/* Step 1 */}
-          <div className="group bg-white/10 rounded-3xl p-8 shadow-xl border border-[#4bbf67]/20 backdrop-blur-xl flex flex-col items-center text-center gap-4 hover:scale-[1.04] transition-transform duration-300 animate-slide-up">
+          <div
+            className="group bg-white/10 rounded-3xl p-8 shadow-xl border border-[#4bbf67]/20 backdrop-blur-xl flex flex-col items-center text-center gap-4 hover:scale-[1.04] transition-transform duration-300 animate-slide-up"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <div className="w-16 h-16 rounded-full bg-[#4bbf67]/30 border-2 border-[#4bbf67]/40 flex items-center justify-center shadow-lg text-3xl text-[#4bbf67] mb-2 ">
               <FaWallet />
             </div>
@@ -47,7 +55,11 @@ const HowToBuy = () => {
             </p>
           </div>
           {/* Step 2 */}
-          <div className="group bg-white/10 rounded-3xl p-8 shadow-xl border border-[#63d382]/20 backdrop-blur-xl flex flex-col items-center text-center gap-4 hover:scale-[1.04] transition-transform duration-300 animate-slide-up delay-100">
+          <div
+            className="group bg-white/10 rounded-3xl p-8 shadow-xl border border-[#63d382]/20 backdrop-blur-xl flex flex-col items-center text-center gap-4 hover:scale-[1.04] transition-transform duration-300 animate-slide-up delay-100"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <div className="w-16 h-16 rounded-full bg-[#63d382]/30 border-2 border-[#63d382]/40 flex items-center justify-center shadow-lg text-3xl text-[#63d382] mb-2 ">
               <FaCoins />
             </div>
@@ -61,7 +73,11 @@ const HowToBuy = () => {
             </p>
           </div>
           {/* Step 3 */}
-          <div className="group bg-white/10 rounded-3xl p-8 shadow-xl border border-[#072b0e]/20 backdrop-blur-xl flex flex-col items-center text-center gap-4 hover:scale-[1.04] transition-transform duration-300 animate-slide-up delay-200 ">
+          <div
+            className="group bg-white/10 rounded-3xl p-8 shadow-xl border border-[#072b0e]/20 backdrop-blur-xl flex flex-col items-center text-center gap-4 hover:scale-[1.04] transition-transform duration-300 animate-slide-up delay-200 "
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             <div className="w-16 h-16 rounded-full bg-[#072b0e]/30 border-2 border-[#072b0e]/40 flex items-center justify-center shadow-lg text-3xl text-[#072b0e] mb-2 ">
               <FaExchangeAlt />
             </div>

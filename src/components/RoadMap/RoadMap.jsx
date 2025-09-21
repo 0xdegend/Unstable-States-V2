@@ -11,14 +11,22 @@ const RoadMap = () => {
       {/* Glassmorphism Card */}
       <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-[#072b0e]/60 to-[#062938]/70 z-0" />
       <div className="relative w-full max-w-3xl mx-auto px-6 py-12 rounded-3xl backdrop-blur-2xl bg-white/10 border border-[#4bbf67]/30 shadow-2xl flex flex-col items-center gap-10 z-10">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-white text-center drop-shadow-xl tracking-tight mb-8 animate-fade-in">
+        <h2
+          className="text-4xl md:text-5xl font-extrabold text-white text-center drop-shadow-xl tracking-tight mb-8 animate-fade-in"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           Roadmap
         </h2>
         <div className="flex flex-col gap-8 w-full">
           {/* Timeline Items */}
           <div className="flex flex-col gap-8">
             {/* Partner with Streamflow */}
-            <div className="flex items-start gap-6 group animate-slide-up">
+            <div
+              className="flex items-start gap-6 group animate-slide-up"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#4bbf67]/30 border border-[#4bbf67]/40 flex items-center justify-center shadow-lg backdrop-blur-xl text-3xl text-[#4bbf67] group-hover:scale-110 transition-transform duration-300">
                 <FaHandshake />
               </div>
@@ -35,7 +43,11 @@ const RoadMap = () => {
               </div>
             </div>
             {/* Buybacks & Burn Plan */}
-            <div className="flex items-start gap-6 group animate-slide-up delay-100">
+            <div
+              className="flex items-start gap-6 group animate-slide-up delay-100"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#ff6f61]/30 border border-[#ff6f61]/40 flex items-center justify-center shadow-lg backdrop-blur-xl text-3xl text-[#ff6f61] group-hover:scale-110 transition-transform duration-300">
                 <FaFire />
               </div>
@@ -54,7 +66,11 @@ const RoadMap = () => {
               </div>
             </div>
             {/* Website & Dashboard */}
-            <div className="flex items-start gap-6 group animate-slide-up delay-200">
+            <div
+              className="flex items-start gap-6 group animate-slide-up delay-200"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#4bbf67]/30 border border-[#4bbf67]/40 flex items-center justify-center shadow-lg backdrop-blur-xl text-3xl text-[#4bbf67] group-hover:scale-110 transition-transform duration-300">
                 <FaDisplay />
               </div>
@@ -74,7 +90,11 @@ const RoadMap = () => {
               </div>
             </div>
             {/* SocialFi Expansion */}
-            <div className="flex items-start gap-6 group animate-slide-up delay-300">
+            <div
+              className="flex items-start gap-6 group animate-slide-up delay-300"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
               <div className="flex-shrink-0 w-14 h-14 rounded-full bg-[#b2c4cd]/30 border border-[#b2c4cd]/40 flex items-center justify-center shadow-lg backdrop-blur-xl text-3xl text-[#b2c4cd] group-hover:scale-110 transition-transform duration-300">
                 <FaCookieBite />
               </div>

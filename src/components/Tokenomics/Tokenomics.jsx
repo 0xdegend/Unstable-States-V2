@@ -67,15 +67,27 @@ const Tokenomics = () => {
     >
       {/* Glassmorphism Card */}
       <div className="relative w-full max-w-4xl mx-auto px-10 py-14 rounded-3xl backdrop-blur-2xl bg-white/10 border border-[#4bbf67]/30 shadow-2xl flex flex-col items-center gap-10 z-10">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-white text-center drop-shadow-xl tracking-tight mb-6">
+        <h2
+          className="text-4xl md:text-5xl font-extrabold text-white text-center drop-shadow-xl tracking-tight mb-6"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           Tokenomics
         </h2>
-        <p className="text-lg md:text-xl text-[#b2c4cd] text-center max-w-2xl font-medium mb-4">
+        <p
+          className="text-lg md:text-xl text-[#b2c4cd] text-center max-w-2xl font-medium mb-4"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           The Unstable States Dollar supply has been capped at{" "}
           <span className="text-[#4bbf67] font-bold">1,000,000,000 USD</span>{" "}
           tokens. Minted on Solana using Bonk, the token contract lives at:
         </p>
-        <div className="flex flex-col items-center gap-2 mb-6">
+        <div
+          className="flex flex-col items-center gap-2 mb-6"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <span
             className="font-mono text-[#4bbf67] bg-white/10 px-4 py-2 rounded-xl border border-[#4bbf67]/30 shadow text-lg tracking-wider select-all block max-w-[350px] md:max-w-xl overflow-x-auto whitespace-nowrap text-sm md:text-lg lg:text-[18px] text-[11px]"
             style={{ wordBreak: "break-all" }}
@@ -91,7 +103,11 @@ const Tokenomics = () => {
           </button>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
-          <div className="bg-white/10 rounded-2xl p-6 shadow-lg border border-[#4bbf67]/20 backdrop-blur-xl flex flex-col items-center">
+          <div
+            className="bg-white/10 rounded-2xl p-6 shadow-lg border border-[#4bbf67]/20 backdrop-blur-xl flex flex-col items-center"
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
             <h3 className="text-xl font-bold text-[#4bbf67] mb-4">
               Token Distribution
             </h3>
@@ -134,7 +150,11 @@ const Tokenomics = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white/10 rounded-2xl p-6 shadow-lg border border-[#4bbf67]/20 backdrop-blur-xl flex flex-col items-center">
+          <div
+            className="bg-white/10 rounded-2xl p-6 shadow-lg border border-[#4bbf67]/20 backdrop-blur-xl flex flex-col items-center"
+            data-aos="fade-right"
+            data-aos-duration="2000"
+          >
             <h3 className="text-xl font-bold text-[#4bbf67] mb-2">Details</h3>
             <ul className="list-disc list-inside text-[#b2c4cd] mb-4">
               <li>
