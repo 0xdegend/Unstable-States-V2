@@ -77,7 +77,7 @@ const Tokenomics = () => {
         </p>
         <div className="flex flex-col items-center gap-2 mb-6">
           <span
-            className="font-mono text-[#4bbf67] bg-white/10 px-4 py-2 rounded-xl border border-[#4bbf67]/30 shadow text-lg tracking-wider select-all block max-w-full md:max-w-xl overflow-x-auto whitespace-nowrap text-sm md:text-lg lg:text-[18px] text-[11px]"
+            className="font-mono text-[#4bbf67] bg-white/10 px-4 py-2 rounded-xl border border-[#4bbf67]/30 shadow text-lg tracking-wider select-all block max-w-[350px] md:max-w-xl overflow-x-auto whitespace-nowrap text-sm md:text-lg lg:text-[18px] text-[11px]"
             style={{ wordBreak: "break-all" }}
           >
             {contractAddress}
