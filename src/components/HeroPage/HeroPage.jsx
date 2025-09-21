@@ -50,10 +50,14 @@ const HeroPage = () => {
         >
           Unstable States Dollar.
         </h1>
-        <p className="text-xl md:text-2xl text-[#b2c4cd] text-center max-w-lg font-medium">
+        <p
+          className="text-xl md:text-2xl text-[#b2c4cd] text-center max-w-lg font-medium"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           The real USD is collapsing.
           <br />
-          <span className="lg:text-[18px] text-[14.5px] text-[#4bbf67] ">
+          <span className="lg:text-[17.5px] text-[14.5px] text-[#4bbf67] ">
             CA: {contractAddress}
           </span>
         </p>
