@@ -1,7 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import "./globals.css";
-
+import "aos/dist/aos.css";
 export const metadata: Metadata = {
   title:
     "Unstable States Dollar | The only dollar that embraces chaos. CA: 7WXaHLjatDZBAZ7hyRiFpYpGpPbcKiyHf6HaxUzSbonk",
@@ -26,6 +26,7 @@ export const metadata: Metadata = {
   },
 };
 import { Bitcount_Single, Tektur, Coral_Pixels } from "next/font/google";
+import AOSWrapper from "@/components/AOSWrapper/AOSWrapper";
 
 const bitcountSingle = Bitcount_Single({
   subsets: ["latin"],
@@ -52,7 +53,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`bg-gray-900 text-white ${bitcountSingle.className}`}>
-        {children}
+        <AOSWrapper>
+          <div>{children}</div>
+        </AOSWrapper>
       </body>
     </html>
   );

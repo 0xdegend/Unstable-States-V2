@@ -43,7 +43,11 @@ const HeroPage = () => {
             className="w-32 h-32 object-contain drop-shadow-2xl"
           />
         </div>
-        <h1 className="text-5xl md:text-6xl font-extrabold text-white text-center drop-shadow-xl tracking-tight">
+        <h1
+          className="text-5xl md:text-6xl font-extrabold text-white text-center drop-shadow-xl tracking-tight"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           Unstable States Dollar.
         </h1>
         <p className="text-xl md:text-2xl text-[#b2c4cd] text-center max-w-lg font-medium">
