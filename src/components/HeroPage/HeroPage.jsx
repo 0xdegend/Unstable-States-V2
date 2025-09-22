@@ -67,7 +67,7 @@ const HeroPage = () => {
         </p>
         <div className="flex flex-col md:flex-row gap-5 w-full justify-center mt-2">
           <a
-            href="https://jup.ag"
+            href="https://jup.ag/swap?sell=So11111111111111111111111111111111111111112&buy=7WXaHLjatDZBAZ7hyRiFpYpGpPbcKiyHf6HaxUzSbonk"
             target="_blank"
             rel="noopener noreferrer"
             className="px-7 py-3 rounded-xl bg-gradient-to-r from-[#4bbf67] via-[#63d382] to-[#062938] text-gray-900 font-bold shadow-xl hover:scale-105 transition-transform border border-[#4bbf67]/40 backdrop-blur-md hover:text-white"
