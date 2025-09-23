@@ -8,7 +8,6 @@ const RoadMap = () => {
       id="roadmap"
       className="relative flex items-center justify-center min-h-[60vh] py-20 bg-transparent p-3"
     >
-      {/* Glassmorphism Card */}
       <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-[#072b0e]/60 to-[#062938]/70 z-0" />
       <div className="relative w-full max-w-3xl mx-auto px-6 py-12 rounded-3xl backdrop-blur-2xl bg-white/10 border border-[#4bbf67]/30 shadow-2xl flex flex-col items-center gap-10 z-10">
         <h2
