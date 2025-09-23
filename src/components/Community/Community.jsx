@@ -10,7 +10,6 @@ const Community = () => {
       id="community"
       className="relative flex items-center justify-center min-h-[50vh] py-20 bg-transparent p-3"
     >
-      {/* Glassmorphism Gradient Accent */}
       <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-[#072b0e]/60 to-[#062938]/70 z-0" />
       <div className="relative w-full max-w-xl mx-auto px-8 py-12 rounded-3xl backdrop-blur-2xl bg-white/10 border border-[#4bbf67]/30 shadow-2xl flex flex-col items-center gap-8 z-10 animate-fade-in">
         <h2 className="text-4xl md:text-5xl font-extrabold text-white text-center drop-shadow-xl tracking-tight mb-4">
