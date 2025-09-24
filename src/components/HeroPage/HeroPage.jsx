@@ -61,7 +61,7 @@ const HeroPage = () => {
         >
           The real USD is collapsing.
           <br />
-          <span className="lg:text-[17.5px] text-[14.5px] text-[#4bbf67] ">
+          <span className="lg:text-[17.5px] text-[10.9px] text-[#4bbf67]  ">
             CA: {contractAddress}
           </span>
         </p>
@@ -71,7 +71,7 @@ const HeroPage = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="px-7 py-3 rounded-xl bg-gradient-to-r from-[#4bbf67] via-[#63d382] to-[#062938] text-gray-900 font-bold shadow-xl hover:scale-105 transition-transform border border-[#4bbf67]/40 backdrop-blur-md hover:text-white"
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-duration="2000"
           >
             Buy $USD
@@ -81,7 +81,7 @@ const HeroPage = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="px-7 py-3 rounded-xl bg-[#072b0e]/60 text-white font-bold shadow-xl hover:bg-[#4bbf67]/20 hover:scale-105 transition-transform border border-[#4bbf67]/40 backdrop-blur-md"
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-duration="2000"
           >
             Join Community
