@@ -100,7 +100,7 @@ const About = () => {
             ></iframe>
           </div>
           <div
-            className="flex-1 flex flex-col items-center justify-center rounded-2xl backdrop-blur-xl bg-white/10 border border-[#4bbf67]/20 shadow-lg p-5 min-w-[305px] max-w-lg min-w-[320px]   h-[40vh] min-h-[400px] md:h-[60vh]"
+            className="flex-1 flex flex-col items-center justify-center rounded-2xl backdrop-blur-xl bg-white/10 border border-[#4bbf67]/20 shadow-lg p-5 min-w-[305px] max-w-lg    h-[40vh] min-h-[400px] md:h-[60vh]"
             data-aos="fade-up"
             data-aos-duration="2000"
           >
