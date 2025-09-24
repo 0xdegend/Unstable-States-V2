@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { FaDiscord } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
@@ -28,7 +29,7 @@ const Community = () => {
             aria-label="Twitter"
             className="group"
           >
-            <span className="w-14 h-14 flex items-center justify-center rounded-full bg-[#4bbf67]/20 border border-[#4bbf67]/30 shadow-lg backdrop-blur-xl text-3xl text-[#4bbf67] transition-transform duration-300 group-hover:scale-110 group-hover:bg-[#4bbf67]/40 animate-bounce">
+            <span className="w-14 h-14 flex items-center justify-center rounded-full bg-[#4bbf67]/20 border border-[#4bbf67]/30 shadow-lg backdrop-blur-xl text-3xl text-[#4bbf67] transition-transform duration-300 group-hover:scale-110 group-hover:bg-[#4bbf67]/40">
               <FaTwitter />
             </span>
           </a>
@@ -39,19 +40,24 @@ const Community = () => {
             aria-label="Telegram"
             className="group"
           >
-            <span className="w-14 h-14 flex items-center justify-center rounded-full bg-[#63d382]/20 border border-[#63d382]/30 shadow-lg backdrop-blur-xl text-3xl text-[#63d382] transition-transform duration-300 group-hover:scale-110 group-hover:bg-[#63d382]/40 animate-bounce">
+            <span className="w-14 h-14 flex items-center justify-center rounded-full bg-[#63d382]/20 border border-[#63d382]/30 shadow-lg backdrop-blur-xl text-3xl text-[#63d382] transition-transform duration-300 group-hover:scale-110 group-hover:bg-[#63d382]/40">
               <FaTelegramPlane />
             </span>
           </a>
           <a
-            href="#"
+            href="https://www.coingecko.com/en/coins/unstable-states-dollar"
             target="_blank"
             rel="noopener"
             aria-label="Discord"
             className="group"
           >
-            <span className="w-14 h-14 flex items-center justify-center rounded-full bg-[#b2c4cd]/20 border border-[#b2c4cd]/30 shadow-lg backdrop-blur-xl text-3xl text-[#b2c4cd] transition-transform duration-300 group-hover:scale-110 group-hover:bg-[#b2c4cd]/40 animate-bounce">
-              <FaDiscord />
+            <span className="w-14 h-14 flex items-center justify-center rounded-full bg-[#b2c4cd]/20 border border-[#b2c4cd]/30 shadow-lg backdrop-blur-xl text-3xl text-[#b2c4cd] transition-transform duration-300 group-hover:scale-110 group-hover:bg-[#b2c4cd]/40 ">
+              <Image
+                src={"/coingecko-logo.png"}
+                alt="Coingecko"
+                width={30}
+                height={30}
+              />
             </span>
           </a>
         </div>

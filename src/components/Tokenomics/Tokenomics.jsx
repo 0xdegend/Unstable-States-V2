@@ -66,7 +66,7 @@ const Tokenomics = () => {
       className="relative flex items-center justify-center min-h-[60vh] py-20 bg-transparent p-3"
     >
       {/* Glassmorphism Card */}
-      <div className="relative w-full max-w-4xl mx-auto px-10 py-14 rounded-3xl backdrop-blur-2xl bg-white/10 border border-[#4bbf67]/30 shadow-2xl flex flex-col items-center gap-10 z-10">
+      <div className="relative w-full max-w-4xl mx-auto px-5 py-14 rounded-3xl backdrop-blur-2xl bg-white/10 border border-[#4bbf67]/30 shadow-2xl flex flex-col items-center gap-10 z-10">
         <h2
           className="text-4xl md:text-5xl font-extrabold text-white text-center drop-shadow-xl tracking-tight mb-6"
           data-aos="fade-up"
