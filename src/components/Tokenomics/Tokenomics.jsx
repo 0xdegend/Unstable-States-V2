@@ -105,7 +105,7 @@ const Tokenomics = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
           <div
             className="bg-white/10 rounded-2xl p-6 shadow-lg border border-[#4bbf67]/20 backdrop-blur-xl flex flex-col items-center"
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-duration="2000"
           >
             <h3 className="text-xl font-bold text-[#4bbf67] mb-4">
@@ -152,7 +152,7 @@ const Tokenomics = () => {
           </div>
           <div
             className="bg-white/10 rounded-2xl p-6 shadow-lg border border-[#4bbf67]/20 backdrop-blur-xl flex flex-col items-center"
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-duration="2000"
           >
             <h3 className="text-xl font-bold text-[#4bbf67] mb-2">Details</h3>
