@@ -8,7 +8,7 @@ const About = () => {
       className="relative flex items-center justify-center min-h-[70vh] py-20 bg-transparent p-3"
     >
       {/* Glassmorphism Card - Flex Row Layout */}
-      <div className="relative w-full max-w-5xl mx-auto px-10 py-14 rounded-3xl backdrop-blur-2xl bg-white/10 border border-[#4bbf67]/30 shadow-2xl flex flex-col  gap-10 z-10">
+      <div className="relative w-full max-w-5xl mx-auto px-5 py-14 rounded-3xl backdrop-blur-2xl bg-white/10 border border-[#4bbf67]/30 shadow-2xl flex flex-col  gap-10 z-10">
         {/* About Content */}
         <div className="w-full flex flex-col justify-center gap-6">
           <h2
@@ -84,7 +84,7 @@ const About = () => {
           data-aos="fade-up"
           data-aos-duration="2000"
         >
-          <div className="flex-1 flex flex-col items-center justify-center rounded-2xl backdrop-blur-xl bg-white/10 border border-[#4bbf67]/20 shadow-lg p-5 min-w-[340px] max-w-lg">
+          <div className="flex-1 flex flex-col items-center justify-center rounded-2xl backdrop-blur-xl bg-white/10 border border-[#4bbf67]/20 shadow-lg p-5 min-w-[320px] max-w-lg">
             <h3 className="text-2xl font-bold text-white mb-2 text-center">
               $USD Chart
             </h3>
@@ -100,7 +100,7 @@ const About = () => {
             ></iframe>
           </div>
           <div
-            className="flex-1 flex flex-col items-center justify-center rounded-2xl backdrop-blur-xl bg-white/10 border border-[#4bbf67]/20 shadow-lg p-5 min-w-[340px] max-w-lg h-[40vh] min-h-[400px] md:h-[60vh]"
+            className="flex-1 flex flex-col items-center justify-center rounded-2xl backdrop-blur-xl bg-white/10 border border-[#4bbf67]/20 shadow-lg p-5 min-w-[340px] max-w-lg min-w-[320px]   h-[40vh] min-h-[400px] md:h-[60vh]"
             data-aos="fade-up"
             data-aos-duration="2000"
           >
