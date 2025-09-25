@@ -78,7 +78,7 @@ const About = () => {
             </sup>
           </p>
         </div>
-        {/* Chart Section: DEXTools and TradingView side by side */}
+
         <div
           className="w-full flex flex-col md:flex-row gap-8 mt-10"
           data-aos="fade-up"
