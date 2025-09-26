@@ -41,11 +41,19 @@ const HeroPage = () => {
           data-aos="fade-up"
           data-aos-duration="2000"
         >
-          <img
+          <video
+            className="w-32 h-32 object-contain drop-shadow-2xl"
+            src="/assets/logo-animation.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+          {/* <img
             src="/usd-3d-logo.png"
             alt="$USD logo"
             className="w-32 h-32 object-contain drop-shadow-2xl"
-          />
+          /> */}
         </div>
         <h1
           className="text-5xl md:text-6xl font-extrabold text-white text-center drop-shadow-xl tracking-tight"
