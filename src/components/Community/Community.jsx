@@ -48,7 +48,7 @@ const Community = () => {
             href="https://www.coingecko.com/en/coins/unstable-states-dollar"
             target="_blank"
             rel="noopener"
-            aria-label="Discord"
+            aria-label="Coingecko"
             className="group"
           >
             <span className="w-14 h-14 flex items-center justify-center rounded-full bg-[#b2c4cd]/20 border border-[#b2c4cd]/30 shadow-lg backdrop-blur-xl text-3xl text-[#b2c4cd] transition-transform duration-300 group-hover:scale-110 group-hover:bg-[#b2c4cd]/40 ">
