@@ -114,10 +114,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      {/* Subtle background accent for glassmorphism */}
       <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-[#072b0e]/60 to-[#062938]/70 z-0" />
     </section>
-    // ...existing code...
   );
 };
 
