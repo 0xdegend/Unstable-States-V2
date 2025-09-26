@@ -8,7 +8,6 @@ const About = () => {
       className="relative flex items-center justify-center min-h-[70vh] py-20 bg-transparent p-2"
     >
       <div className="relative w-full max-w-5xl mx-auto px-5 py-14 rounded-3xl backdrop-blur-2xl bg-white/10 border border-[#4bbf67]/30 shadow-2xl flex flex-col  gap-10 z-10">
-        {/* About Content */}
         <div className="w-full flex flex-col justify-center gap-6">
           <h2
             className="lg:text-4xl text-3xl md:text-5xl font-extrabold text-white text-center drop-shadow-xl tracking-tight mb-2"
