@@ -47,7 +47,6 @@ const HeroPage = () => {
             autoPlay
             loop
             muted
-            playsInline
           />
           {/* <img
             src="/usd-3d-logo.png"
