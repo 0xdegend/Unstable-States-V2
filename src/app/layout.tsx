@@ -14,7 +14,7 @@ export const metadata: Metadata = {
       "Unstable States Dollar | The only dollar that embraces chaos.CA: 7WXaHLjatDZBAZ7hyRiFpYpGpPbcKiyHf6HaxUzSbonk",
     description:
       "Unstable States Dollar | The only dollar that embraces chaos.CA: 7WXaHLjatDZBAZ7hyRiFpYpGpPbcKiyHf6HaxUzSbonk",
-    images: ["/usd-logo.png"],
+    images: ["/usd-latest-3d-logo.png"],
     type: "website",
   },
   twitter: {
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     title: "Unstable States Dollar",
     description:
       "Unstable States Dollar | The only dollar that embraces chaos.CA: 7WXaHLjatDZBAZ7hyRiFpYpGpPbcKiyHf6HaxUzSbonk",
-    images: ["/unstable-states-dollar.jpeg"],
+    images: ["/usd-latest-3d-logo.png"],
   },
 };
 import { Bitcount_Single, Tektur, Coral_Pixels } from "next/font/google";
