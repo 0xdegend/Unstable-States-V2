@@ -50,9 +50,9 @@ const HeroPage = () => {
             playsInline
           /> */}
           <img
-            src="/assets/3d-usd-logo.png"
+            src="/usd-hero-animation.gif"
             alt="$USD logo"
-            className="w-32 h-32 object-cover drop-shadow-2xl"
+            className="w-[170px] h-[170px] object-cover drop-shadow-2xl"
           />
         </div>
         <h1
