@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-
+import Image from "next/image";
 const Tokenomics = () => {
   const [copied, setCopied] = useState(false);
   const contractAddress = "7WXaHLjatDZBAZ7hyRiFpYpGpPbcKiyHf6HaxUzSbonk";
